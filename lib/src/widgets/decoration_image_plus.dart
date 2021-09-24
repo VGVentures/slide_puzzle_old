@@ -163,6 +163,18 @@ class DecorationImagePlus implements DecorationImage {
             '$stackTrace',
             name: 'slide_puzzle.decoration_image_plus');
       };
+
+  @override
+  FilterQuality get filterQuality => FilterQuality.low;
+
+  @override
+  bool get invertColors => false;
+
+  @override
+  bool get isAntiAlias => false;
+
+  @override
+  double get opacity => 1.0;
 }
 
 /// The painter for a [DecorationImagePlus].

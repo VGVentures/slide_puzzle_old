@@ -11,7 +11,8 @@ void main() => runApp(const PuzzleApp());
 class PuzzleApp extends StatelessWidget {
   final int rows, columns;
 
-  const PuzzleApp({this.columns = 4, this.rows = 4});
+  const PuzzleApp({Key? key, this.columns = 4, this.rows = 4})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) => MaterialApp(
